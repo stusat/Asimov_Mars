@@ -3,7 +3,7 @@ The project with all the files, that we as a team have developed for the Engage2
 --------
 ## Introduction
 The aim of this project is to provide a path-finding library to approximate the shortest path in real-life situations, like- in maps, games where there can be many hindrances.
-We consider a 2D Grid having several obstacles genearted randomly and we start from a source cell (top left corner of the grid) to reach towards a goal cell (bottom right corner)
+We considered a 2D Grid having several obstacles genearted randomly and we start from a source cell (top left corner of the grid) to reach towards a goal cell (bottom right corner). This project is made using the _p5.js library._
 ## Why A* algorithm? An explanation
 A* Search algorithm is one of the best and popular technique used in path-finding and graph traversals. Consider a square grid having many obstacles and we are given a starting cell and a target cell. We want to reach the target cell (if possible) from the starting cell as quickly as possible. 
 
@@ -39,6 +39,11 @@ There are generally three approximation heuristics to calculate h, namely, _Manh
             (current_cell.y – goal.y)2 )` 
             
 • This heuristic is used when we are allowed to move in any direction, inclusive of diagonal movement.
+## Time Complexity
+Considering a graph, it may take us to travel all the edge to reach the destination cell from the source cell. For example, consider a graph where source and destination nodes are connected by a series of edges, like – 0(source) –>1 –> 2 –> 3 (target).
+So the worse case time complexity is O(E), where E is the number of edges in the graph
+## Limitations
+Although being the best pathfinding algorithm around, A* Search Algorithm doesn’t produce the shortest path always, as it relies heavily on heuristics / approximations to calculate h.
 
 
 
