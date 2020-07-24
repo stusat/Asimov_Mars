@@ -7,11 +7,11 @@ We considered a 2D Grid having several obstacles genearted randomly and we start
 ## Why A* algorithm? An explanation
 A* Search algorithm is indeed a well known technique used in path-finding and graph traversals. Consider a square network/grid that has obstacles and we are given a start cell and a target cell. Our job is to reach the target cell (if possible) from the start cell as efficiently possible in the shortest path. 
 
-What the A* Search Algorithm does is that at each succession it picks up the node based on a value-‘f’ which is a parameter equal to the sum of two other parameters – ‘g’ and ‘h’. At each succession, node/cell having the lowest ‘f’ value is selected, and processed.
+The A* Search Algorithm, picks up the node based on a value-‘f’ which is a parameter equal to the sum of two other parameters – ‘g’ and ‘h’. At each succession, node/cell with the smallest ‘f’ value is selected, and processed.
 
 We define ‘g’ and ‘h’ as follows:
 
-g = the movement cost to move from the start cell to a given square on the network, following the path generated to get there.
+g = the movement cost to move from the start cell to a given square on the network, following the path initiated to get there.
 
 h = the estimated movement cost to move from that given square on the grid to the final target. This is known as the heuristic: a kind of smart guess. The actual distance isn't known until we path is found. There are several ways to calculate this ‘h’.
 ## Heuristics
@@ -20,7 +20,7 @@ h can be calculated in 2 methods:
 
                             (or)
                             
-* `Approximate the value of h using some heuristics (less time consuming).`
+* `Approximate the h value with the help of heuristic methods (less time consuming).`
 
 **1) Exact Heuristics –**
 
@@ -34,7 +34,7 @@ A few methods to calculate the exact value of h are as follows:
 
 There are generally three approximation heuristics to calculate h, namely, _Manhattan Distance, Diagonal Distance_ and thirdly _Euclidean distance._ We've implemented the heuristics using the **Euclidean Distance** method and the same is explained below.
 
-• As it is clear from its name, it is nothing but the distance between the current cell and the goal cell using the distance formula:
+• h is the distance between the current cell and the target cell computed using the distance formula:
    
    `h = sqrt ( (current_cell.x – target.x)2 + 
             (current_cell.y – target.y)2 )` 
