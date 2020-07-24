@@ -13,5 +13,29 @@ We define ‘g’ and ‘h’ as follows:
 
 g = the movement cost to move from the starting point to a given square on the grid, following the path generated to get there.
 h = the estimated movement cost to move from that given square on the grid to the final destination. This is often referred to as the heuristic, which is nothing but a kind of smart guess. We really don’t know the actual distance until we find the path. There can be many ways to calculate this ‘h’ which are discussed in the later sections.
+# Heuristics
+h can be calculated in 2 methods:
+• Either calculate the exact value of h (which is certainly time consuming).
+                            (or)
+• Approximate the value of h using some heuristics (less time consuming).
+
+1) Exact Heuristics –
+
+Below are some of the methods to calculate the exact value of h.
+
+(i) Pre-compute the distance between each pair of cells before running the A* Search Algorithm.
+
+(ii) If there are no blocked cells/obstacles then we can just find the exact value of h without any pre-computation using the distance formula/Euclidean Distance
+
+2) Approximation Heuristics –
+
+There are generally three approximation heuristics to calculate h, namely, Manhattan Distance, Diagonal Distance and thirdly Euclidean distance. We've implemented the heuristics using the Euclidean Distance method and the same is explained below.
+
+• As it is clear from its name, it is nothing but the distance between the current cell and the goal cell using the distance formula
+  h = sqrt ( (current_cell.x – goal.x)2 + 
+            (current_cell.y – goal.y)2 ) 
+• This heuristic is used when we are allowed to move in any direction, inclusive of diagonal movement.
+
+
 
 
