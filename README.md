@@ -34,6 +34,7 @@ There are generally three approximation heuristics to calculate h, namely, Manha
 • As it is clear from its name, it is nothing but the distance between the current cell and the goal cell using the distance formula
   h = sqrt ( (current_cell.x – goal.x)2 + 
             (current_cell.y – goal.y)2 ) 
+            
 • This heuristic is used when we are allowed to move in any direction, inclusive of diagonal movement.
 
 
