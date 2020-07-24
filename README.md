@@ -36,15 +36,15 @@ There are generally three approximation heuristics to calculate h, namely, _Manh
 
 • As it is clear from its name, it is nothing but the distance between the current cell and the goal cell using the distance formula:
    
-   `h = sqrt ( (current_cell.x – goal.x)2 + 
-            (current_cell.y – goal.y)2 )` 
+   `h = sqrt ( (current_cell.x – target.x)2 + 
+            (current_cell.y – target.y)2 )` 
             
 • This heuristic is used when we are allowed to move in any direction, inclusive of diagonal movement.
 ## Time Complexity
-Considering a graph, it may take us to travel all the edge to reach the destination cell from the source cell. For example, consider a graph where source and destination nodes are connected by a series of edges, like – 0(source) –>1 –> 2 –> 3 (target).
-So the worse case time complexity is O(E), where E is the number of edges in the graph
+Considering a graph, it might take us to venture out about all the edges to arrive at the target cell from the source cell. For instance, consider a graph where start and target nodes are associated by a progression of edges, like – 0(start) –>1 –> 2 –> 3 (target).
+Hence, the worse case time complexity is O(E), where E represents the number of edges in the graph.
 ## Limitations
-Although being the best pathfinding algorithm around, A* Search Algorithm doesn’t produce the shortest path _always_, as it relies heavily on heuristics / approximations to calculate h.
+Despite being the best pathfinding algorithm around, A* Search Algorithm doesn’t find the shortest path _always_, as it depends, to a large amount on heuristics / approximations to calculate h.
 
 
 
