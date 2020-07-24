@@ -4,7 +4,7 @@ The project with all the files, that we as a team have developed for the Engage2
 # Introduction
 The aim of this project is to provide a path-finding library to approximate the shortest path in real-life situations, like- in maps, games where there can be many hindrances.
 We consider a 2D Grid having several obstacles genearted randomly and we start from a source cell (top left corner of the grid) to reach towards a goal cell (bottom right corner)
-
+----------
 # Why A* algorithm? An explanation
 A* Search algorithm is one of the best and popular technique used in path-finding and graph traversals. Consider a square grid having many obstacles and we are given a starting cell and a target cell. We want to reach the target cell (if possible) from the starting cell as quickly as possible. 
 
