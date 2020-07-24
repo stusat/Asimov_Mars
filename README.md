@@ -15,11 +15,11 @@ g = the movement cost to move from the starting point to a given square on the g
 h = the estimated movement cost to move from that given square on the grid to the final destination. This is often referred to as the heuristic, which is nothing but a kind of smart guess. We really don’t know the actual distance until we find the path. There can be many ways to calculate this ‘h’ which are discussed in the later sections.
 # Heuristics
 h can be calculated in 2 methods:
-* `Either calculate the exact value of h (which is certainly time consuming).` *
+* `Either calculate the exact value of h (which is certainly time consuming).` 
 
                             (or)
                             
-• Approximate the value of h using some heuristics (less time consuming).
+* `Approximate the value of h using some heuristics (less time consuming).`
 
 1) Exact Heuristics –
 
