@@ -5,18 +5,18 @@ The project with all the files, that we as a team have developed for the Engage2
 The aim of this project is to provide a path-finding library to approximate the shortest path in real-life situations, like- in maps, games where there can be many hindrances.
 We considered a 2D Grid having several obstacles genearted randomly and we start from a source cell (top left corner of the grid) to reach towards a goal cell (bottom right corner). This project is made using the _p5.js library._
 ## Why A* algorithm? An explanation
-A* Search algorithm is one of the best and popular technique used in path-finding and graph traversals. Consider a square grid having many obstacles and we are given a starting cell and a target cell. We want to reach the target cell (if possible) from the starting cell as quickly as possible. 
+A* Search algorithm is indeed a well known technique used in path-finding and graph traversals. Consider a square network/grid that has obstacles and we are given a start cell and a target cell. Our job is to reach the target cell (if possible) from the start cell as efficiently possible in the shortest path. 
 
-What A* Search Algorithm does is that at each step it picks the node according to a value-‘f’ which is a parameter equal to the sum of two other parameters – ‘g’ and ‘h’. At each step it picks the node/cell having the lowest ‘f’, and process that node/cell.
+What the A* Search Algorithm does is that at each succession it picks up the node based on a value-‘f’ which is a parameter equal to the sum of two other parameters – ‘g’ and ‘h’. At each succession, node/cell having the lowest ‘f’ value is selected, and processed.
 
 We define ‘g’ and ‘h’ as follows:
 
-g = the movement cost to move from the starting point to a given square on the grid, following the path generated to get there.
+g = the movement cost to move from the start cell to a given square on the network, following the path generated to get there.
 
-h = the estimated movement cost to move from that given square on the grid to the final destination. This is often referred to as the heuristic, which is nothing but a kind of smart guess. We really don’t know the actual distance until we find the path. There can be many ways to calculate this ‘h’ which are discussed in the later sections.
+h = the estimated movement cost to move from that given square on the grid to the final target. This is known as the heuristic: a kind of smart guess. The actual distance isn't known until we path is found. There are several ways to calculate this ‘h’.
 ## Heuristics
 h can be calculated in 2 methods:
-* `Either calculate the exact value of h (which is certainly time consuming).` 
+* `Calculate the exact h value (very time consuming).` 
 
                             (or)
                             
@@ -24,11 +24,11 @@ h can be calculated in 2 methods:
 
 **1) Exact Heuristics –**
 
-Below are some of the methods to calculate the exact value of h.
+A few methods to calculate the exact value of h are as follows:
 
-(i) Pre-compute the distance between each pair of cells before running the A* Search Algorithm.
+(i) Pre-compute the distance between each pair of cells prior to the running of the A* Search Algorithm.
 
-(ii) If there are no blocked cells/obstacles then we can just find the exact value of h without any pre-computation using the distance formula/Euclidean Distance
+(ii) If there are no obstacles then the exact value of h can be found without any pre-computation using the distance formula/Euclidean Distance
 
 **2) Approximation Heuristics –**
 
