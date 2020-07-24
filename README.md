@@ -7,7 +7,7 @@ We considered a 2D Grid having several obstacles genearted randomly and we start
 ## Why A* algorithm? An explanation
 A* Search algorithm is indeed a well known technique used in path-finding and graph traversals. Consider a square network/grid that has obstacles and we are given a start cell and a target cell. Our job is to reach the target cell (if possible) from the start cell as efficiently possible in the shortest path. 
 
-The A* Search Algorithm, picks up the node based on a value-‘f’ which is a parameter equal to the sum of two other parameters – ‘g’ and ‘h’. At each succession, node/cell with the smallest ‘f’ value is selected, and processed.
+The A* Search Algorithm, selects the node based on a value 'f', which is equal to the summation of two other values, 'g' and 'h'. At each succession, node/cell with the smallest ‘f’ value is selected, and processed.
 
 We define ‘g’ and ‘h’ as follows:
 
