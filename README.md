@@ -34,8 +34,8 @@ Below are some of the methods to calculate the exact value of h.
 There are generally three approximation heuristics to calculate h, namely, Manhattan Distance, Diagonal Distance and thirdly Euclidean distance. We've implemented the heuristics using the Euclidean Distance method and the same is explained below.
 
 • As it is clear from its name, it is nothing but the distance between the current cell and the goal cell using the distance formula:
-  * 'h = sqrt ( (current_cell.x – goal.x)2 + 
-            (current_cell.y – goal.y)2 )' 
+   `h = sqrt ( (current_cell.x – goal.x)2 + 
+            (current_cell.y – goal.y)2 )` 
             
 • This heuristic is used when we are allowed to move in any direction, inclusive of diagonal movement.
 
