@@ -31,7 +31,7 @@ Below are some of the methods to calculate the exact value of h.
 
 2) **Approximation Heuristics –**
 
-There are generally three approximation heuristics to calculate h, namely, _Manhattan Distance, Diagonal Distance_ and thirdly _Euclidean distance._ We've implemented the heuristics using the Euclidean Distance method and the same is explained below.
+There are generally three approximation heuristics to calculate h, namely, _Manhattan Distance, Diagonal Distance_ and thirdly _Euclidean distance._ We've implemented the heuristics using the **Euclidean Distance** method and the same is explained below.
 
 • As it is clear from its name, it is nothing but the distance between the current cell and the goal cell using the distance formula:
    
