@@ -28,7 +28,7 @@ A few methods to calculate the exact value of h are as follows:
 
 (i) Pre-compute the distance between each pair of cells prior to the running of the A* Search Algorithm.
 
-(ii) If there are no deterrents, at that point the specific estimation of h can be found with no pre-calculation utilizing the formula of Euclidean Distance.
+(ii) If there are no deterrents, at that point, the specific estimation of h can be found with no pre-calculation utilizing the formula of Euclidean Distance.
 
 **2) Approximation Heuristics –**
 
