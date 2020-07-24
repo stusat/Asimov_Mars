@@ -16,7 +16,9 @@ h = the estimated movement cost to move from that given square on the grid to th
 # Heuristics
 h can be calculated in 2 methods:
 • Either calculate the exact value of h (which is certainly time consuming).
+
                             (or)
+                            
 • Approximate the value of h using some heuristics (less time consuming).
 
 1) Exact Heuristics –
