@@ -21,7 +21,7 @@ h can be calculated in 2 methods:
                             
 * `Approximate the value of h using some heuristics (less time consuming).`
 
-1) **Exact Heuristics –**
+**1) Exact Heuristics –**
 
 Below are some of the methods to calculate the exact value of h.
 
@@ -29,7 +29,7 @@ Below are some of the methods to calculate the exact value of h.
 
 (ii) If there are no blocked cells/obstacles then we can just find the exact value of h without any pre-computation using the distance formula/Euclidean Distance
 
-2) **Approximation Heuristics –**
+**2) Approximation Heuristics –**
 
 There are generally three approximation heuristics to calculate h, namely, _Manhattan Distance, Diagonal Distance_ and thirdly _Euclidean distance._ We've implemented the heuristics using the **Euclidean Distance** method and the same is explained below.
 
